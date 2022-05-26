@@ -1,0 +1,27 @@
+{
+    "titulo": "ESTEAM",
+    "descripcion": "Nuestra réplica de steam",
+    "categorias": ["FPS", "MOBA","MMO", "MMORPG","Hack & Slash"],
+    "contacto":{
+        "email": "hola@esteam.es",
+        "direccion": "calle de los videojuegos 14"
+    },
+    "videojuegos":[
+        {
+            "titulo":"Valorant",
+            "año":"2020", 
+            "categorias":["FPS","Multijugador"]
+        },
+        {
+            "titulo":"Heartstone",
+            "año":"2015", 
+            "categorias":["TCG","Multijugador","cards"]
+        },
+        {
+            "titulo":"The Last of US",
+            "año":"2013", 
+            "categorias":["aventura","terror","zombies","accion"]
+        } 
+    ]
+
+}
