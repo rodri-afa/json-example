@@ -1,3 +1,14 @@
 *{
     font-family: 'Courier New', Courier, monospace;
 }
+#personaje{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    box-shadow: 0 0 6pc rgba(0, 0, 0, 0.3);
+}
+#personaje img{
+    width: 72px;
+    min-height: 72px;
+    background-color: gray;
+}
