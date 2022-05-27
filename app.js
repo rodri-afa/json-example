@@ -39,5 +39,14 @@ function rellenarDatos(idElemento,valor){
 // document.getElementById('titulo').innerHTML = 'hjkfasdhkjfhajsdkhjk';
 
 
-rellenarDatos('titulo',esteamJSON.titulo);
-rellenarDatos('descripcion','jhasdfkjhasdk fkj asdhfkas');
+// rellenarDatos('titulo',esteamJSON.titulo);
+// rellenarDatos('descripcion',esteamJSON.descripcion);
+
+const url = 'https://rickandmortyapi.com/api/';
+
+fetch(url + 'character/1')
+  .then((response) => response.json())
+  .then((data) => {
+    return console.log(data)
+
+  })
