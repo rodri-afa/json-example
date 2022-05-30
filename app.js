@@ -30,23 +30,37 @@ const esteamJSON =
 };
 
 
+// console.log(esteamJSON.descripcion);
+
 
 
 function rellenarDatos(idElemento,valor){
     document.getElementById(idElemento).innerHTML = valor;
 }
+function rellenarImagen(idElemento,valor){
+    document.getElementById(idElemento).src= valor;
+}
+
 
 // document.getElementById('titulo').innerHTML = 'hjkfasdhkjfhajsdkhjk';
 
 
-// rellenarDatos('titulo',esteamJSON.titulo);
-// rellenarDatos('descripcion',esteamJSON.descripcion);
+rellenarDatos('titulo',esteamJSON.titulo);
+rellenarDatos('descripcion',esteamJSON.descripcion);
 
 const url = 'https://rickandmortyapi.com/api/';
-
-fetch(url + 'character/1')
+const endpoint = 'character/1'
+fetch(url + endpoint)
   .then((response) => response.json())
   .then((data) => {
-    return console.log(data)
+    
+    console.log('el objeto data tiene:',data);
+
+
+    rellenarDatos('nombre', data.name);
+    rellenarDatos('origen', data.origin.name);
+    rellenarImagen('imagen', data.image);
+
+
 
   })
